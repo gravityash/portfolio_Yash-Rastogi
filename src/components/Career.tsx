@@ -15,44 +15,46 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Vice President</h4>
+                <h5>Language Legacy Club, IMS Engineering College</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2025 - Present</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Leading the Language Legacy Club at IMS Engineering College, Ghaziabad.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Bachelor of Technology in Computer Science and Design</h4>
+                <h5>IMS Engineering College • Ghaziabad UP</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2027</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Grade: 7.83
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Intermediate</h4>
+                <h5>K.C.M. School • Moradabad</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>2022 - 2023</h3>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
-            </p>
+            <p></p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>High School</h4>
+                <h5>K.C.M. School • Moradabad</h5>
+              </div>
+              <h3>2020 - 2021</h3>
+            </div>
+            <p></p>
           </div>
         </div>
       </div>

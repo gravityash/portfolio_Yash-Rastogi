@@ -34,7 +34,7 @@
 }
 .what-box-in {
   flex-direction: column;
-  height: 500px;
+  height: 600px;
   margin-left: 200px;
   position: relative;
   display: none;
@@ -199,7 +199,7 @@
   animation: whatBorders 1.2s 1 forwards;
 }
 .what-border2 svg {
-  height: 500px;
+  height: 100%;
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
@@ -249,7 +249,7 @@
     margin-right: 20%;
   }
   .what-box-in {
-    height: 400px;
+    height: 500px;
   }
   .what-content h3 {
     font-size: 28px;
@@ -290,7 +290,7 @@
     padding-bottom: 50px;
   }
   .what-box-in {
-    height: 500px;
+    height: 600px;
     margin-left: -50px;
   }
   .what-content {
@@ -326,7 +326,8 @@
     justify-content: left;
   }
   .what-box:last-child {
-    height: 500px;
+    height: auto;
+    min-height: 500px;
   }
   .what-box {
     width: 500px;
@@ -337,8 +338,11 @@
     width: 100%;
   }
   .what-box-in {
+    /* Show on mobile — no character model scroll animation here */
+    display: flex;
     margin-left: 0px;
-    height: 450px;
+    height: auto;
+    min-height: 450px;
   }
   .what-content h5,
   .what-content-flex {

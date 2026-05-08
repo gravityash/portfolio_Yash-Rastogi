@@ -1,9 +1,8 @@
 import {
   FaGithub,
-  FaInstagram,
   FaLinkedinIn,
-  FaXTwitter,
 } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
@@ -54,29 +53,49 @@ const SocialIcons = () => {
         elem.removeEventListener("mousemove", onMouseMove);
       };
     });
+
+    // Hide sticky icons when contact section is in view
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            social.style.opacity = "0";
+            social.style.pointerEvents = "none";
+          } else {
+            social.style.opacity = "1";
+            social.style.pointerEvents = "auto";
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      observer.observe(contactSection);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href="https://github.com" target="_blank">
+          <a href="https://github.com/yash21092005" target="_blank">
             <FaGithub />
           </a>
         </span>
         <span>
-          <a href="https://www.linkedin.com" target="_blank">
+          <a href="https://www.linkedin.com/in/yash-rastogi-4037152a5" target="_blank">
             <FaLinkedinIn />
           </a>
         </span>
         <span>
-          <a href="https://x.com" target="_blank">
-            <FaXTwitter />
-          </a>
-        </span>
-        <span>
-          <a href="https://www.instagram.com" target="_blank">
-            <FaInstagram />
+          <a href="https://leetcode.com/u/yash21092005/" target="_blank">
+            <SiLeetcode />
           </a>
         </span>
       </div>
